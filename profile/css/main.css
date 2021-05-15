@@ -1,0 +1,584 @@
+/* My custom css color  */
+
+:root {
+    --dark-color: #222222;
+    --dark-color-sec: #353535;
+    --light-white: rgb(243, 241, 241);
+}
+
+:focus {
+    outline: none;
+}
+
+a:link {
+    color: var(--dark-color-sec);
+    text-decoration: none;
+}
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    color: teal;
+    transition: .4s color ease-in;
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+*::before,
+*::after,
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    font-weight: normal;
+}
+
+#main {
+    font-size: 100%;
+    background-color: #f1f1f1;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    display: block;
+}
+
+.backgroundChanger {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    align-content: flex-end;
+    margin: 10px;
+}
+
+#backgroundColor {
+    cursor: pointer;
+    white-space: normal;
+    appearance: menulist;
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 40px;
+    border: 2px solid orange;
+    text-align: center;
+    display: block;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.bc {
+  font-size: .9em;
+  min-height: 2em;
+  white-space: normal;
+}
+
+#backgroundColor:focus {
+    border: 2px solid orange;
+    outline-offset: 0;
+}
+
+.wrapper {
+    display: flex;
+    position: relative;
+    width: 100%;
+    padding: 0 8px;
+    margin-top: 30px;
+    
+}
+
+.Profile {
+    width: 33%;
+    background-color: var(--light-white);
+    margin-right: 10px;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+    max-height: 1700px;
+}
+
+.imageContainer {
+    width: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+
+.imageContainer .mylogo {
+    border: 0;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.myName {
+    position: absolute;
+    left: 8px;
+    bottom: 0;
+}
+
+.myName h2 {
+    font-weight: 500;
+    font-family: Roboto, sans-serif;
+    padding: 8px;
+    line-height: 2;
+}
+
+.aboutme {
+    background-color: white;
+    height: auto;
+    display: block;
+}
+
+.me {
+    padding: 10px;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.0em;
+    color: var(--light-white);
+    color: var(--dark-color);
+}
+
+abbr {
+    text-decoration: underline;
+    text-decoration-color: red;
+    padding: 5px;
+}
+
+.me .para::first-letter {
+ font-size: 1.7em;
+ color: orange;
+}
+
+.me p {
+    line-height: 1.5;
+    padding: 5px;
+}
+
+.bootcamp {
+    list-style-type: circle;
+    list-style-position: inside;
+}
+.bootcamp > li {
+    padding-bottom:  8px;
+}
+
+.Profiledetails {
+    width: 100%;
+    position: relative;
+}
+
+.profession{
+    display: flex;
+    position: relative;
+}
+
+.secondList {
+    width: 95%;
+    line-height: 1.5;
+    font-weight: normal;
+    color: var(--light-white);
+    list-style-type: none;
+    position: relative;
+    color: var(--dark-color-sec);
+}
+
+.secondList .secondNav-item > div {
+    padding: 8px;
+    font-size: 1.2em;
+    margin-top: 8px;
+    display: inline-block;
+}
+
+.secondList .secondNav-item > div p {
+    display: inline-block;
+}
+
+/* .secondList .secondNav-item > div span {
+    padding-left: 10px;
+    padding-right: 10px;
+} */
+
+.secondList .secondNav-item > div > a {
+    color: orange;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.secondList .secondNav-item > div > a:hover {
+    color: green;
+    transition: color .4s ease-in;
+}
+
+.skills {
+    position: relative;
+}
+
+.skills-heading {
+    font-weight: 500;
+    font-family: Roboto, sans-serif;
+    font-size: 1.4em;
+    padding: 8px 0 8px 25px;
+    margin-top: 8px;
+}
+
+.colorsContainer {
+    width: 90%;
+    position: relative;
+    margin: 10px auto;
+}
+
+.primary {
+    width: 100%;
+    position: relative;
+    display: block;
+    margin-top: 20px;
+
+}
+
+.primaryHeader {
+    position: relative;
+    margin-top: 10px;
+    padding: 15px;
+}
+
+.primaryHeader > h3 {
+    font-size: 0.9em;
+    font-weight: 500;
+    font-family: sans-serif;
+    color: var(--dark-color-sec);
+}
+
+.primaryColorContainer {
+    background-color: rgb(231, 225, 225);
+    display: block;
+    width: 100%;
+    height: 13px;
+    border-radius: 40px;
+    margin-top: 15px;
+}
+
+.secondaryColorContainer {
+    display: block;
+    width: 90%;
+    background-color: orange;
+    height: inherit;
+    position: relative;
+    margin-top: -10px;
+    text-align: center;
+    color: var(--dark-color-sec);
+    border-radius: 40px;
+}
+
+.secondaryColorContainer .span,
+.css .span,
+.js .span,
+.github .span,
+.vuejs .span,
+.reactjs .span,
+.sass .span,
+.angularjs .span,
+.bootstrap .span {
+    position: absolute;
+    top:-3px;
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+.css {
+    display: block;
+    width: 80%;
+    background-color: orange;
+    height: inherit;
+    position: relative;
+    margin-top: -10px;
+    text-align: center;
+    color: var(--dark-color-sec);
+    border-radius: 40px; 
+}
+
+.js {
+    display: block;
+    width: 40%;
+    background-color: orange;
+    height: inherit;
+    position: relative;
+    margin-top: -10px;
+    text-align: center;
+    color: var(--dark-color-sec);
+    border-radius: 40px; 
+}
+
+.github {
+    display: block;
+    width: 30%;
+    background-color: orange;
+    height: inherit;
+    position: relative;
+    margin-top: -10px;
+    text-align: center;
+    color: var(--dark-color-sec);
+    border-radius: 40px; 
+}
+
+.bootstrap {
+    display: block;
+    width: 50%;
+    background-color: orange;
+    height: inherit;
+    position: relative;
+    margin-top: -10px;
+    text-align: center;
+    color: var(--dark-color-sec);
+    border-radius: 40px; 
+}
+
+.reactjs {
+    display: block;
+    width: 10%;
+    background-color: orange;
+    height: inherit;
+    position: relative;
+    margin-top: -10px;
+    text-align: center;
+    color: var(--dark-color-sec);
+    border-radius: 40px; 
+}
+
+.vuejs {
+    display: block;
+    width: 5%;
+    background-color: orange;
+    height: inherit;
+    position: relative;
+    margin-top: -10px;
+    text-align: center;
+    color: var(--dark-color-sec);
+    border-radius: 40px; 
+}
+
+.sass {
+    display: block;
+    width: 35%;
+    background-color: orange;
+    height: inherit;
+    position: relative;
+    margin-top: -10px;
+    text-align: center;
+    color: var(--dark-color-sec);
+    border-radius: 40px; 
+}
+
+.angularjs {
+    display: block;
+    width: 20%;
+    background-color: orange;
+    height: inherit;
+    position: relative;
+    margin-top: -10px;
+    text-align: center;
+    color: var(--dark-color-sec);
+    border-radius: 40px; 
+}
+
+.curriculumVitae {
+    background-color: var(--light-white);
+    width: 67%;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+    padding: 10px;
+   height: cal(100vh - 300px);
+}
+
+.workExperience {
+    padding: 25px 15px;
+    font-size: 1.3em;
+    font-family: Roboto, sans-serif;
+    line-height: 2.2;
+    color: var(--dark-color-sec);
+}
+
+.company, .schoolName {
+    padding-top: 15px;
+}
+
+.company p, .schoolName p {
+    width: 100%;
+    display: block;
+    margin-left:20px;
+    font-family: sans-serif;
+    font-size: .8em;
+    color: orange;
+    font-weight: 500;
+}
+
+.company .current {
+    background-color: orange;
+    padding: 8px;
+    color: white;
+    border-radius: 3px;
+}
+
+.summary, .schoolSummary {
+    width: 100%;
+    padding: 5px;
+    position: relative;
+    display: block;
+}
+
+.summary p, .schoolSummary p {
+    font-size: .7em;
+}
+
+.addressWrapper {
+    display: block;
+    position: relative;
+    font-size: .8em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.schoolAddress {
+    font-style: normal;
+    position: relative;
+    font-size: .9em;
+}
+
+.schoolAddress > ul > li{
+    list-style-type: none;
+    padding: 5px;
+    margin: 10px 0px 0px 0px;
+}
+
+.schoolAddress .details p {
+    font-size: 1em;
+    padding: 5px;
+}
+
+
+.education {
+    padding: 10px 15px;
+    font-size: 1.3em;
+    font-family: Roboto, sans-serif;
+    line-height: 2.2;
+    color: var(--dark-color-sec);
+}
+
+.secondarySchool {
+    display: block;
+    position: relative;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+.school {
+    position: relative;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.schoolName > h3 {
+    font-size: 1.5em;
+    font-family: sans-serif;
+    font-weight: 500;
+    padding-left: 20px;
+}
+
+.schoolYear {
+    padding: 10px 10px 10px 20px;
+    font-size: 1.1em;
+    font-family: sans-serif;
+    color: var(--dark-color-sec);
+    font-weight: 500;
+}
+
+.footerSection {
+    display: block;
+    width: 98.9%;
+    position: relative;
+    height: 50px;
+    background-color: orange;
+    margin: 10px auto auto auto;
+}
+
+.copywrite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    padding: 10px;
+    color: var(--dark-color);
+}
+
+.copywrite > p {
+    font-size: 1.0em;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+
+
+
+
+
+
+@media (min-width: 992px) {
+ .street {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-size: .850em;
+ }
+
+}
+
+@media (min-width: 768px) {
+    .Profile {
+        max-height: 1600px;
+    }
+   
+   }
+
+
+   @media only screen and (min-width: 660px) {
+    
+    .Profile {
+        max-height: 1800px;
+    }
+
+    .me p, blockquote{
+    
+        font-size: .9em;
+        line-height: 2;
+    }
+
+    .ikj {
+        font-size: .86em;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .Profile {
+        width: 100%;
+        margin-bottom: 20px;
+        height: 100%;
+    }
+
+    .curriculumVitae {
+        width: 100%;
+        height: 100%;
+    }
+
+    .me p, blockquote {
+        line-height: 2;
+        font-size: 1em;
+    }
+}
+
+
+

@@ -1,0 +1,507 @@
+/* My custom css color variables */
+:root {
+    --light-grey: #d3d3d3;
+    --light-white : rgba(255, 255, 255, 0.747);
+    --light-dark : rgba(69, 75, 75, 0.712);
+    --light-teal : rgba(34, 165, 154, 0.767);
+    --dark-blue : rgba(29, 27, 184, 0.747);
+    --light-blue : rgba(28, 113, 146, 0.747);
+    --dark-black : #000000;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size:  100%;
+    font-weight: normal;
+}
+
+#Body {
+    overflow: hidden; 
+    position: relative;
+    background: linear-gradient(to right, rgba(69, 75, 75, 0.712),rgba(69, 75, 75, 0.712), rgba(160, 157, 157, 0.3) 190%,rgba(69, 75, 75, 0.712) );
+}
+
+.Body {
+    font-family: tahoma, sans-serif, verdana;
+    display: block;
+}
+
+.Centered-Container {
+    display: block;
+    width:  100%;
+    /* background:  white; */
+    min-height:  100%;
+    height: auto;
+    /* margin:  40px auto 30px auto; */
+    padding:  20px;
+}
+
+#Centered-Container {
+    position: relative;
+    font-size:  1.2em;
+    /* box-shadow:  0 4px 10px 0 rgb(0 0 0 / 20%),  0 4px 20px 0 rgb(0 0 0 / 19%); */
+    border-radius:  5px;
+    min-height:  650px;
+    background-image:  url("../images/dark.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:  center center;
+    background-clip: border-box;
+}
+
+.Header {
+    position: relative;
+    width:  100%;
+    /* background:  var(--light-white); */
+    height:  100px;
+}
+
+#Header {
+    display: flex;
+    padding:  10px;
+    flex-wrap: nowrap;
+    font-size:  0.9em;
+}
+
+.Logo-Container {
+    width:  10%;
+    position: relative;
+    text-align: center;
+}
+
+.Logo-Container .Logo-Item {
+    list-style-type: none;
+    position: relative;
+    padding:  10px;
+}
+
+
+.Nav-Container {
+    position: relative;
+    font-weight: normal;
+    font-family:  Carter, sans-serif;
+}
+
+.Logo {
+    position: relative;
+    padding:  5px;
+    font-size:  0.9em;
+}
+
+
+.Logo-Link {
+    padding-left:  50px;
+    display:  block;
+    text-decoration: none;
+    color:  white;
+    font-family: 'Krona One', sans-serif; ;
+}
+.Nav-Container {
+    width:  80%;
+    align-self: stretch;
+    
+}
+
+/* To do:  onclick event to change justify-content = center */
+.Nav-List {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+    transform: translateX(0);
+    padding-left:  5px;
+    transition:  .7s ease-in-out;
+}
+
+.Media-Icon {
+    width:  10%;
+    position: relative;
+    transition:  .7s ease-in-out;
+}
+
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.menu {
+    position: absolute;
+    right:  0px;
+    top:  0px;
+    z-index:  200;
+    width:  50px;
+    height:  50px;
+    /* background-color:  var(--dark-blue); */
+    border-radius:  50% 50% 50% 50%;
+    transition:  .5s ease-in-out;
+    box-shadow:  0 0 0 0 #FFF, 0 0 0 0 #FFF;
+    cursor: pointer;
+}
+
+.menu::before {
+    top:  -10px;
+}
+
+.menu::after {
+    bottom:  -10px;
+}
+
+.hamburger {
+    position: absolute;
+    background-color:  red;
+    display: block;
+    width:  30px;
+    top:  30%;
+    right:  8%;
+    transform-origin: center;
+    transition:  .5s ease-in-out;
+    height: 2px;
+     transform: rotate(0deg); 
+}
+
+.hamburger.open {
+    transform:  rotate(45deg);
+}
+
+.hamburger.open::before {
+    transform:  rotate(90deg);
+    top:  0;
+}
+
+.hamburger.open::after {
+    transform:  rotate(90deg);
+    bottom:  0;
+}
+
+.hamburger::after,
+.hamburger::before {
+    transition:  .5s ease-in-out;
+    position: absolute;
+    content:  "";
+    display: block;
+    width:  100%;
+    height:  100%;
+    background-color:  white;
+}
+
+.hamburger::before {
+    top:  -10px;
+}
+
+.hamburger::after {
+    bottom:  -10px;
+}
+
+.Nav-Container {
+    position: relative;
+    font-weight: normal;
+    font-family:  Carter, sans-serif;
+}
+
+.Nav {
+    position: relative;
+    padding:  5px;
+    font-size:  0.9em;
+}
+
+.Nav-List {
+    list-style-type: none;
+    padding:  10px;
+    position: relative;
+}
+
+.Nav-list-Item-Link {
+    padding-left:  50px;
+    display:  block;
+    text-decoration: none;
+    /* color:  black; */
+    font-family: 'Krona One', sans-serif;
+    font-size:  0.9em;
+    color:  white;
+}
+
+/* Social media Icons styles */ 
+
+.Icon-Nav {
+    position: relative;
+    display: block;
+    font-size:  .8em;
+}
+
+
+.Icon-Container {
+    list-style-type: none;
+    width:  100%;
+    position: relative;
+    padding:  10px; 
+}
+
+.Icon-Container > .face .Icon-Item-Link:hover {
+    background-color:  blue;
+    color:  white;
+    transition:  .5s ease-in-out;
+}
+
+.Icon-Container > .what .Icon-Item-Link:hover {
+    background-color:  green;
+    color:  white;
+    transition:  .5s ease-in-out;
+}
+
+.Icon-Container > .insta .Icon-Item-Link:hover {
+    background-color:  red;
+    color:  white;
+    transition:  .5s ease-in-out;
+}
+
+.Icon-Container > .dribble .Icon-Item-Link:hover {
+    background-color:  rgb(231, 96, 118);
+    color:  white;
+    transition:  .5s ease-in-out;
+}
+
+.Icon-Container > .twitter .Icon-Item-Link:hover {
+    background-color:  rgb(12, 115, 156);
+    color:  white;
+    transition:  .5s ease-in-out;
+}
+
+.Icon-Item-Link {
+    color:  black;
+    text-align: center;
+    display: block;
+    height:  25px;
+    padding-top:  4px;
+    margin-top:  10px;
+    width:  25px;
+    border-radius:  50% 50% 50% 50%;
+    background-color:  white;
+    transition:  .5s ease-in-out;
+}
+
+.Icon-Items {
+    display:  none;
+    transition: .7s ease-in-out;
+}
+
+.Icon-Items.Shown {
+    display: block;
+    animation-name: tap;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-duration:  .7s;
+    animation-timing-function: ease-in-out display;
+}
+
+@keyframes tap {
+    from {
+        opacity:  .4;
+    }
+
+    to {
+        opacity:  1;
+    }
+}
+
+.sub-Centered-Container {
+    background-color:  transparent;
+    margin-top:  60px; 
+    display:  block;
+    position: relative;
+}
+
+.Name {
+    position: relative;
+    padding:  15px;
+}
+
+.NameContainer {
+    width:  100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+height: 100%
+;} 
+
+.Emoji {
+    position: relative;
+    text-align: center;
+    padding:  5px;
+}
+
+#Waving-Hand {
+    position: inherit;
+    font-size: 2.5em;
+}
+
+#Waving-Hand #move {
+    background-color:  white;
+    border-radius:  50% 50% 50% 50%;
+    display: block;
+    padding: 5px;
+    transition:  .10s ease;
+    animation-name: go;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-duration:  2.5000s;
+    animation-direction: alternate-reverse;
+    position: relative;
+}
+
+@keyframes go {
+
+    from {
+        transform: rotate(284deg);
+    }
+
+    to {
+        transform: rotate(410deg) scale(1.2);
+    }
+
+}
+
+.Name-Content {
+    font-size:  .6em;
+    font-family: verdana,tahoma, sans-serif;
+    font-weight: 500;
+    padding:  10px;
+    font-size:  2em;
+    color: red;
+}
+
+.ball1 {
+    position: absolute;
+    border:  30px solid rgba(255,  0,  0, 0.6);
+    z-index:  1;
+    border-radius:  50% 20% 50% 30%;
+    animation-name:  angled;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-duration:  2.3s;
+    animation-direction: alternate-reverse;
+    transition:  7s ease-in-out;
+}
+
+@keyframes angled {
+   0% {
+        top: 5px;
+        left:  20%;
+    }
+
+    100% {
+         left: 20%;
+        top:  5px; 
+        transform: rotate(360deg) translateX(-100px);
+        border-color: rgba(160, 157, 157, 0.3);
+    }  
+} 
+
+
+.ball2 {
+    border-left: 50px solid green;
+    border-right:  50px solid transparent;
+    border-bottom:  50px solid transparent;
+    border-top: 50px solid transparent;
+    position: absolute;
+    top: 30%;
+    left:  20%;
+    z-index: 1;
+}
+
+/* .ball2::before {
+    position: absolute;
+    border-left: 50px solid green;
+    border-right:  0px solid transparent;
+    border-bottom:  0px solid transparent;
+    border-top: 0px solid transparent;
+    content: "";
+    height:  50px;
+    z-index: 1;
+    left:  40px;
+    top: -10px;
+    background-color:  gold;
+} */
+
+/* .ball2::after{
+    position: absolute;
+    border-left: 50px solid green;
+    border-right:  0px solid transparent;
+    border-bottom:  0px solid transparent;
+    border-top: 0px solid transparent;
+    content: "";
+    height:  50px;
+    z-index: 1;
+    right:  40px;
+    top: -10px;
+    background-color:  gold;
+    animation:  mumu;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-duration:  2.3s;
+    transition: .7s ease-in-out;
+} */
+
+/* @keyframes mumu {
+
+    10% {
+        transform:  translateY(50px);
+    }
+    40% {
+        transform: translateY(50px);
+    }
+
+    100% {
+        top:  0px;
+        transform: translateX(100px);
+    }
+} */
+
+.Icon-Nav {
+    position: fixed;
+    bottom:  0;
+    left:  0;
+}
+
+
+.Skills {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+}
+
+.Skills-Header-Container {
+    font-size: 2em;
+    padding-bottom:  10px;
+    color:  white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 4px 1px 0px rgb(255 0 0 / 30%);
+}
+
+.Para {
+    color: white;
+    font-family: Tahoma, verdana, sans-serif;
+    font-weight: normal;
+    font-size: .8em;
+}
+
+
